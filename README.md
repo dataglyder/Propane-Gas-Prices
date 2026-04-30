@@ -243,9 +243,9 @@ So, if we pick a day say day 200, we can check the price for that particular day
 ## Predicting the Future with Linear Regression
 Our linear regression chart stops where the days ends(i.e., last day of Dec. 2024) we can extend the day to how many days we want in 2025 by extending the regression line to the right as in:
 ```Python
-import numpy as n
+import numpy as np
 last_day_in_2024 = from_2000["day"].max()     # the value is 931
-future_daz_in_2025 = np.append(from_2000["day], n.arange(932, 1022))
+future_daz_in_2025 = np.append(from_2000["day], np.arange(932, 1022))
 
 ```
 Future days in 2025 were estimated (i.e., extended to the end of March 2025) with "future_daz_in_2025". Now we can estimate the price propane on first day of 2025 or last day in the month of March as in:
