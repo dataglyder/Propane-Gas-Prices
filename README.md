@@ -241,7 +241,7 @@ This is developed from regression equation and our calculated variables like the
 So, if we pick a day say day 200, we can check the price for that particular day i.e., $`price = 1.7929 + 0.0017(200) which is approximately ($2.13)`$. But, this is from day in the present. How about the future?
 
 ## Predicting the Future with Linear Regression
-Our linear regression chart stops where the days ends(i.e., last day of Dec. 2024) we can extend the day to how many days we want in 2025 by extending the regression line to the right as in:
+Our linear regression chart stops where the days end(i.e., last day of Dec. 2024). We can extend the day to how many days we want in 2025 by extending the regression line to the right as in:
 ```Python
 import numpy as np
 last_day_in_2024 = from_2000["day"].max()     # the value is 931
